@@ -5,580 +5,193 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--========== BOX ICONS ==========-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <!--========== SEO / SOCIAL ==========-->
+  <meta name="author" content="Eisler Francisco Valles Rodriguez">
+  <meta name="description"
+    content="CV of Eisler Francisco Valles Rodriguez, Full Stack Engineer specialized in backend development, AI pipelines and DevOps. TypeScript, NestJS, .NET, Python, AWS.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Eisler Francisco Valles Rodriguez - Full Stack Engineer">
+  <meta property="og:description"
+    content="Full Stack Engineer specialized in backend development, AI pipelines and DevOps.">
+  <meta property="og:url" content="https://eisler2712.github.io/cv/">
+  <meta name="twitter:card" content="summary">
+
+  <!--========== FAVICON ==========-->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128187;</text></svg>">
 
   <!--========== CSS ==========-->
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <title>Lic. Eisler Francisco Valles Rodriguez CV</title>
+  <title>Eisler Francisco Valles Rodriguez - CV</title>
 </head>
 
 <body>
 
-  <!--========== HEADER ==========-->
-  <header class=" l-header" id="header">
-    <nav class="nav bd-container">
-      <a href="#" class="nav__logo">Lic. Eisler Francisco Valles Rodriguez</a>
+  <main class="sheet">
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">
-              <i class='bx bx-home nav__icon'></i>Home
-            </a>
-          </li>
+    <div class="controls">
+      <button type="button" class="btn" id="theme-button" title="Switch theme">Theme</button>
+      <button type="button" class="btn" id="print-button" title="Opens the print dialog - choose
+        &quot;Save as PDF&quot;">Save as PDF</button>
+    </div>
 
-          <li class="nav__item">
-            <a href="#profile" class="nav__link">
-              <i class='bx bx-user nav__icon'></i>Profile
-            </a>
-          </li>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <h1 class="header__name">Eisler Francisco Valles Rodriguez</h1>
+      <p class="header__role">Full Stack Engineer</p>
 
-          <li class="nav__item">
-            <a href="#education" class="nav__link">
-              <i class='bx bx-book nav__icon'></i>Education
-            </a>
-          </li>
+      <ul class="header__contact">
+        <li>Havana, Cuba</li>
+        <li>eislervalles@gmail.com</li>
+        <li>(+53) 54878095</li>
+        <li><a href="https://github.com/Eisler2712" target="_blank" rel="noopener">github.com/Eisler2712</a></li>
+        <!-- TODO: add your LinkedIn here once you have the URL:
+        <li><a href="https://www.linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noopener">linkedin.com/in/YOUR-HANDLE</a></li>
+        -->
+      </ul>
+    </header>
 
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">
-              <i class='bx bx-receipt nav__icon'></i>Skills
-            </a>
-          </li>
+    <!--========== PROFILE ==========-->
+    <section class="section">
+      <h2 class="section__title">Profile</h2>
+      <p class="section__intro">
+        Full Stack Engineer with 5+ years building TypeScript/Node.js (NestJS) and Angular products, with a
+        DevOps background on AWS and Docker. Recently built AI media pipelines (face recognition, content
+        moderation) and production observability with OpenTelemetry. B.Sc. in Computer Science, University of
+        Havana.
+      </p>
+    </section>
 
-          <li class="nav__item">
-            <a href="#experience" class="nav__link">
-              <i class='bx bx-briefcase-alt nav__icon'></i>Experience
-            </a>
-          </li>
+    <!--========== EXPERIENCE ==========-->
+    <section class="section">
+      <h2 class="section__title">Experience</h2>
 
-          <li class="nav__item">
-            <a href="#courses" class="nav__link">
-              <i class='bx bx-award nav__icon'></i>Courses
-            </a>
+      <article class="entry">
+        <div class="entry__head">
+          <h3 class="entry__role">Full Stack Developer <span class="entry__org">Fanatyx</span></h3>
+          <span class="entry__date">Oct 2025 &ndash; Present</span>
+        </div>
+        <!-- TODO: add scale/impact here (volume of media processed, moderation
+             accuracy, latency, team size). Numbers are what sell these bullets. -->
+        <ul class="entry__list">
+          <li>Built AI pipelines for facial recognition, minor detection and content moderation.</li>
+          <li>Developed video and image processing features for the platform.</li>
+          <li>Implemented backend services and frontend interfaces for media management workflows.</li>
+        </ul>
+        <p class="entry__stack">TypeScript &middot; NestJS &middot; Angular &middot; AWS &middot; AWS Rekognition &middot; FFmpeg</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry__head">
+          <h3 class="entry__role">Full Stack Developer <span class="entry__org">Katapulk</span></h3>
+          <span class="entry__date">Jun 2024 &ndash; Sep 2025</span>
+        </div>
+        <!-- TODO: add scale/impact here (orders per day, services instrumented,
+             checkout conversion, how many people you mentored). -->
+        <ul class="entry__list">
+          <li>Developed and maintained a marketplace-style e-commerce platform.</li>
+          <li>Integrated new payment methods such as Tropipay, expanding the platform's payment options.</li>
+          <li>Instrumented the system with OpenTelemetry, adding distributed tracing and metrics.</li>
+          <li>Maintained the public frontend and the admin panel, shipping continuous improvements.</li>
+          <li>Provided technical support and mentorship to teammates.</li>
+        </ul>
+        <p class="entry__stack">Angular &middot; DDD &middot; PostgreSQL &middot; MongoDB &middot; OpenTelemetry &middot; Grafana</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry__head">
+          <h3 class="entry__role">Full Stack Developer <span class="entry__org">NTSprint</span></h3>
+          <span class="entry__date">Jun 2023 &ndash; Oct 2023</span>
+        </div>
+        <ul class="entry__list">
+          <li><b>MedicoInfoTech</b> &mdash; clinic management system tracking all patient records; full stack.</li>
+          <li><b>The Automedic</b> &mdash; customers, appointments and payments for an auto repair shop; frontend.
           </li>
         </ul>
+        <p class="entry__stack">Angular &middot; SQL Server &middot; Flutter &middot; DevExtreme</p>
+      </article>
+
+      <article class="entry">
+        <div class="entry__head">
+          <h3 class="entry__role">Freelance Developer</h3>
+          <span class="entry__date">2021 &ndash; 2023</span>
+        </div>
+        <ul class="entry__list">
+          <li><b>SmartWord</b> &mdash; web app for intelligent full-text search across document sets.</li>
+          <li><b>La Casa del Manga</b> &mdash; movie catalog built on the .NET platform.</li>
+        </ul>
+        <p class="entry__stack">ASP.NET Core &middot; Blazor &middot; PostgreSQL &middot; Information Retrieval</p>
+      </article>
+    </section>
+
+    <!--========== PUBLICATIONS ==========-->
+    <section class="section">
+      <h2 class="section__title">Publications &amp; Conferences</h2>
+
+      <article class="entry">
+        <div class="entry__head">
+          <h3 class="entry__role">Non-Invasive Estimation of Blood Glucose using Photoplethysmography</h3>
+          <span class="entry__date">Sep 2025</span>
+        </div>
+        <p class="entry__sub">III Congress of Applied Mathematics to Engineering</p>
+        <ul class="entry__list">
+          <li>Built the machine learning pipeline estimating blood glucose from PPG signals, and a web application
+            to visualize the results.</li>
+          <li>Validated the model using the Clarke Error Grid and additional accuracy metrics.</li>
+        </ul>
+        <p class="entry__stack">Python &middot; PyTorch &middot; LightGBM &middot; signal processing (SST, CWT)</p>
+      </article>
+    </section>
+
+    <!--========== SKILLS ==========-->
+    <section class="section">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills">
+        <span class="skills__label">Languages</span>
+        <span>TypeScript &middot; C# &middot; Python &middot; Dart</span>
+
+        <span class="skills__label">Backend</span>
+        <span>NestJS &middot; Node.js &middot; ASP.NET Core &middot; FastAPI &middot; REST &middot; GraphQL</span>
+
+        <span class="skills__label">Frontend</span>
+        <span>Angular &middot; Flutter &middot; Tailwind CSS &middot; Blazor</span>
+
+        <span class="skills__label">Data &amp; AI</span>
+        <span>PyTorch &middot; scikit-learn &middot; LightGBM &middot; AWS Rekognition</span>
+
+        <span class="skills__label">Databases</span>
+        <span>PostgreSQL &middot; MongoDB &middot; SQL Server</span>
+
+        <span class="skills__label">DevOps &amp; Cloud</span>
+        <span>AWS &middot; Docker &middot; GitLab CI/CD &middot; OpenTelemetry</span>
+
+        <span class="skills__label">Practices</span>
+        <span>DDD &middot; CQRS &middot; TDD &middot; Scrum</span>
       </div>
+    </section>
 
-      <div class="nav__toggle" id="nav-toggle">
-        <i class='bx bx-grid-alt'></i>
+    <!--========== EDUCATION ==========-->
+    <section class="section">
+      <h2 class="section__title">Education</h2>
+
+      <div class="row">
+        <span><b>B.Sc. in Computer Science</b> &mdash; University of Havana, Cuba</span>
+        <span class="row__muted">2021 &ndash; 2025</span>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <main class="l-main bd-container">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-      <div class="resume__left">
-        <!--========== HOME ==========-->
-        <section class="home" id="home">
-          <div class="home__container section bd-grid">
-            <div class="home__data bd-grid">
-              <!-- <img src="assets/img/avatar.jpg" alt="" class="home__img"> -->
-              <div style="margin-top: 30px;"></div>
-              <h1 class="home__title">Lic. Eisler Francisco Valles Rodriguez</h1>
+    <!--========== LANGUAGES ==========-->
+    <section class="section">
+      <h2 class="section__title">Languages</h2>
 
-              <h3 class="home__profession">Software Engineer</h3>
-              <!--<span id="resume-button" class="generate-pdf">Download</span>-->
-            </div>
-
-            <div class="home__address bd-grid">
-              <span class="home__information">
-                <i class='bx bx-map home__icon'></i> La Havana, Cuba
-              </span>
-
-              <span class="home__information">
-                <i class='bx bx-envelope home__icon'></i> eislervalles@gmail.com
-              </span>
-
-              <span class="home__information">
-                <i class='bx bx-phone home__icon'></i> (+53) 54878095
-              </span>
-            </div>
-
-          </div>
-
-          <!-- Theme change button -->
-          <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-        </section>
-
-
-        <!--========== PROFILE ==========-->
-        <section class="profile section" id="profile">
-          <h2 class="section-title">Profile</h2>
-
-          <p class="profile__description">
-            Software Engineer with DevOps skills. Bachelor degree on Computer Science. I am used to work with
-            several
-            programming languages such as C#, Python, Typescript. Passionate for new technologies
-            and I consider to myself like a quick learner. I
-            really enjoy solving problems of competitive programming. I also appreciate the level of
-            organization
-            and planning of the development process, beside the use of good practices, and the quality of the
-            code. I love working
-            with AI.
-          </p>
-        </section>
-
-        <!--========== EDUCATION ==========-->
-        <section class="education section" id="education">
-          <h2 class="section-title">Education</h2>
-
-          <div class="education__container bd-grid">
-            <div class="education__content">
-              <div class="education__time">
-                <span class="education__rounder"></span>
-                <span class="education__line"></span>
-              </div>
-
-              <div class="education__data bd-grid">
-                <h3 class="education__title">Bachelor Degree, Computer Science</h3>
-                <span class="education__studies">University of Havana, Havana, Cuba</span>
-                <span class="education__year">2021 - 2025</span>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <!--========== LANGUAGES ==========-->
-        <section class="languages section">
-          <h3 class="section-title">Languages</h3>
-          <div class="languages__container">
-            <ul class="languages__content bd-grid">
-              <li class="languages__name">
-                <span class="languages__circle"></span> Spanish
-              </li>
-              <li class="languages__name">
-                <span class="languages__circle"></span> English
-              </li>
-            </ul>
-          </div>
-        </section>
-
-
-        <!--========== SKILLS  ==========-->
-        <section class="skills section hide" id="skills">
-          <h2 class="section-title">Skills</h2>
-
-          <div class="skills__content bd-grid">
-            <!-- <div class="skills__name">
-                        <span class="skills__circle"></span> Vue
-
-                        <span class="skills__time">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                        </span>
-                    </div> -->
-            <div class="skills__name">
-              <span class="skills__circle"></span> DDD
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Typescript
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Nodejs
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Asp .Net Core
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Nestjs
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> REST
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> MongoDB
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Docker
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> xUnit
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> TDD
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Clean Code
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Gitlab CI/CD
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> AWS
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Git
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Scrum
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Flutter
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Angular
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Neural Networks
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Artificial Intelligence
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Machine Learning
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> OpenTelemetry
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> PostgreSQL
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> SqlServer
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> YourTrack
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> GitLab
-            </div>
-            <div class="skills__name">
-              <span class="skills__circle"></span> Tailwindcss
-            </div>
-
-          </div>
-          <!-- <a href="#" class="skills-button" id="skills-button">See More</a> -->
-        </section>
-
+      <div class="row">
+        <span>Spanish (Native) &middot; English (B2)</span>
       </div>
+    </section>
 
-      <div class="resume__right">
-        <!--========== EXPERIENCE ==========-->
-        <section class="experience section" id="experience">
-          <h2 class="section-title">Experience</h2>
-
-          <div class="experience__container bd-grid">
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Full Stack Developer | Fanatyx October 2025 – Present</h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <span>Developed video and image processing features for the platform.</span>
-                  <span class="experience__circle"></span>
-                  <span>Built AI pipelines for facial recognition, minor detection, and content moderation.</span>
-                  <span class="experience__circle"></span>
-                  <span>Implemented backend services and frontend interfaces for media management workflows.</span>
-                </li>
-
-                <div class="experience__technologies">
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">NestJS</li>
-                    <li class="experience__technologies-item">Angular</li>
-                    <li class="experience__technologies-item">FFmpeg</li>
-                    <li class="experience__technologies-item">AWS Rekognition</li>
-                    <li class="experience__technologies-item">AWS</li>
-                    <li class="experience__technologies-item">Typescript</li>
-                    <li class="experience__technologies-item">AI/ML</li>
-                    <li class="experience__technologies-item">Docker</li>
-                    <li class="experience__technologies-item">Git</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Participation in the III Congress of Applied Mathematics to Engineering |
-                  September 2025</h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <span>Gave a presentation about Non-Invasive Estimation of Blood Glucose using
-                    Photoplethysmography</span>
-                    <span class="experience__circle"></span>
-                  <span>Development a machine learning pipeline to make the predictions.</span>
-                  <span class="experience__circle"></span>
-                  <span>Creation of a web application to display the results.</span>
-                  <span class="experience__circle"></span>
-                  <span>Carrying out tests using the Clarke-Error-Grid and other metrics</span>
-                </li>
-
-                <div class="experience__technologies">
-                  <ul class="experience__technologies-list">
-
-                    <li class="experience__technologies-item">FastApi</li>
-                    <li class="experience__technologies-item">Html</li>
-                    <li class="experience__technologies-item">Css</li>
-                    <li class="experience__technologies-item">Tailwindcss</li>
-                    <li class="experience__technologies-item">Python</li>
-                    <li class="experience__technologies-item">LightGBM</li>
-                    <li class="experience__technologies-item">scikit-learn</li>
-                    <li class="experience__technologies-item">Pytorch</li>
-                    <li class="experience__technologies-item">Machine-Learning</li>
-                    <li class="experience__technologies-item">SST</li>
-                    <li class="experience__technologies-item">ANHM</li>
-                    <li class="experience__technologies-item">CWT</li>
-                    <li class="experience__technologies-item">pyppg</li>
-                    <li class="experience__technologies-item">Git</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Full Stack Developer | Katapulk June 2024 – September 2025</h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <span>Collaborated on the development and maintenance of Katapulk's e-commerce platform, a
-                    marketplace-style product sales system.</span>
-                  <span class="experience__circle"></span>
-                  <span>Integrated new payment methods such as Tropipay, enhancing the platform's payment
-                    options.</span>
-                  <span class="experience__circle"></span>
-                  <span>Implemented telemetry using OpenTelemetry for system monitoring and observability.</span>
-                  <span class="experience__circle"></span>
-                  <span>Maintained both the public frontend and admin panel, implementing continuous
-                    improvements.</span>
-                  <span class="experience__circle"></span>
-                  <span>Provided technical support and mentorship to team members, improving development
-                    efficiency.</span>
-                </li>
-
-                <div class="experience__technologies">
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">DDD</li>
-                    <li class="experience__technologies-item">Angular</li>
-                    <li class="experience__technologies-item">REST</li>
-                    <li class="experience__technologies-item">PostgreSQL</li>
-                    <li class="experience__technologies-item">Tailwindcss</li>
-                    <li class="experience__technologies-item">OpenTelemetry</li>
-                    <li class="experience__technologies-item">Jaeger</li>
-                    <li class="experience__technologies-item">Grafana</li>
-                    <li class="experience__technologies-item">Seq</li>
-                    <li class="experience__technologies-item">Payment Integration</li>
-                    <li class="experience__technologies-item">YourTrack</li>
-                    <li class="experience__technologies-item">Figma</li>
-                    <li class="experience__technologies-item">MongoDB</li>
-                    <li class="experience__technologies-item">GitLab</li>
-                    <li class="experience__technologies-item">Docker</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">NTSprint June 2023 - October 2023
-                </h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>MedicoInfoTech</b> It is a clinic where the software is in charge of keeping track of all
-                    patients.
-                    I was collaborating as Full Stack
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">DDD</li>
-                    <li class="experience__technologies-item">REST</li>
-                    <li class="experience__technologies-item">SqlServer</li>
-                    <li class="experience__technologies-item">Angular</li>
-                    <li class="experience__technologies-item">DevExtreme</li>
-                  </ul>
-                </div>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>The Automedic</b> It is an application to control customers, appointments and payments in an auto
-                    repair shop. I was collaborating in the Front
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">Flutter</li>
-                    <li class="experience__technologies-item">Square</li>
-                    <li class="experience__technologies-item">SqlServer</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">Freelance</h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>SmartWord App</b> Smart word! is a completely original application whose purpose is to
-                    intelligently search for a text in a set of documents.
-
-                    It is a web application, developed with .NET Core 6.0 technology, specifically using Blazor as a web
-                    framework for the graphical interface, and in the C# language.
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">Asp.Net Core</li>
-                    <li class="experience__technologies-item">SRI</li>
-                    <li class="experience__technologies-item">Blazor</li>
-                    <li class="experience__technologies-item">HTML/Css</li>
-                    <li class="experience__technologies-item">Levenshtein Algorithm</li>
-
-                  </ul>
-                </div>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>La Casa del Manga</b> Help develop a movie catalog using the .NET platform
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">Asp.Net Core</li>
-                    <li class="experience__technologies-item">SRI</li>
-                    <li class="experience__technologies-item">Blazor</li>
-                    <li class="experience__technologies-item">HTML/Css</li>
-                    <li class="experience__technologies-item">LINQ</li>
-                    <li class="experience__technologies-item">PostgreSQL</li>
-
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-
-            <div class="experience__content">
-              <div class="experience__time">
-                <span class="experience__rounder"></span>
-                <span class="experience__line"></span>
-              </div>
-
-              <div class="experience__data bd-grid">
-                <h3 class="experience__title">BIOS Technology Center July 2019 - December 2020
-                </h3>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>Michigan Master</b> is a private educational institution. I worked as a Backend
-                    Developer (NodeJS) and DevOps.
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">Node, Nest</li>
-                    <li class="experience__technologies-item">GraphQl</li>
-                    <li class="experience__technologies-item">REST</li>
-                    <li class="experience__technologies-item">Docker</li>
-                    <li class="experience__technologies-item">MongoDB</li>
-                    <li class="experience__technologies-item">CQRS</li>
-                    <li class="experience__technologies-item">Jest</li>
-                  </ul>
-                </div>
-                <li class="experience__description">
-                  <span class="experience__circle"></span>
-                  <div>
-                    <b>Prestigio</b> is a system that focus in stream videos. I worked as Backend
-                    Developer and DevOps, handling several services in AWS for transcode videos.
-                  </div>
-                </li>
-                <div class="experience__technologies">
-
-                  <ul class="experience__technologies-list">
-                    <li class="experience__technologies-item">Node, Nest</li>
-                    <li class="experience__technologies-item">GraphQl</li>
-                    <li class="experience__technologies-item">AWS</li>
-                    <li class="experience__technologies-item">Docker</li>
-                    <li class="experience__technologies-item">MongoDB</li>
-                    <li class="experience__technologies-item">CQRS</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <!--ExtraCurricular Courses-->
-        <section class="experience section" id="courses">
-          <h2 class="section-title">Courses</h2>
-
-
-          <div class="experience__container bd-grid">
-            <div class="skills__content bd-grid">
-              <div class="skills__name">
-                <span class="skills__circle"></span> Data Structure And Advanced Algorithms
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Algorithm Design and Analysis
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Software Engineering
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Database Systems I and II
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Distributed Systems
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Computer Networks
-              </div>
-              <div class="skills__name">
-                <span class="skills__circle"></span> Compilation
-              </div>
-            </div>
-          </div>
-
-
-        </section>
-
-
-      </div>
-    </div>
   </main>
-  <!--========== SCROLL TOP ==========-->
-  <a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-up-arrow-alt scrollttop__icon'></i>
-  </a>
-
-  <!--========== HTML2PDF ==========-->
-  <!-- <script src="assets/js/html2pdf.bundle.min.js"></script> -->
 
   <!--========== MAIN JS ==========-->
   <script src="assets/js/main.js"></script>
